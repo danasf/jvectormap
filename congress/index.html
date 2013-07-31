@@ -1,0 +1,29 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>jVectorMap 113th Congress</title>
+  <link rel="stylesheet" href="jquery-jvectormap-1.2.2.css" type="text/css" media="screen"/>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="jquery-jvectormap-1.2.2.min.js"></script>
+  <script src="112cd.js"></script>
+  <script src="113cd.js"></script>
+</head>
+<body>
+	<h3>113 Congress</h3>  
+	  <div id="world-map" style="width: 800px; height: 500px"></div>
+	<h3>112 Congress</h3>
+	  <div id="world-map2" style="width: 800px; height: 500px"></div>
+  <script>
+    $(function(){
+
+            // map source, public domain:
+            // https://commons.wikimedia.org/wiki/File:113th_U.S._Congress_House_districts_blank.svg
+			map2 = new jvm.WorldMap({map: '113cd', container: $('#world-map') });
+   			// map source wikipedia cc by-sa:
+   			//https://en.wikipedia.org/wiki/File:US_Congressional_districts.svg
+   			map = new jvm.WorldMap({map:'112cd',container: $('#world-map2') });
+		  });
+   
+  </script>
+</body>
+</html>
